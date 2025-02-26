@@ -13,10 +13,10 @@ services:
       - db
 
   db:
-    build: https://github.com/genome-nexus/genome-nexus-importer.git
+    build: https://github.com/eugeniomazzone/genome-nexus-importer.git
     environment:
-      - REF_ENSEMBL_VERSION=${REF_ENSEMBL_VERSION}
-      - SPECIES=${SPECIES}
+      - REF_ENSEMBL_VERSION=cfa_ensembl104
+      - SPECIES=canis_lupus_familiaris
     restart: always
 
   vep:
