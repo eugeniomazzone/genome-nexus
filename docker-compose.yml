@@ -13,14 +13,18 @@ services:
       - db
 
   db:
-    build: https://github.com/eugeniomazzone/genome-nexus-importer.git
+    build: 
+        context: https://github.com/eugeniomazzone/genome-nexus-importer.git
+        dockerfile: Dockerfile_dog
     environment:
       - REF_ENSEMBL_VERSION=cfa_ensembl104
       - SPECIES=canis_lupus_familiaris
     restart: always
 
   vep:
-    build: https://github.com/genome-nexus/genome-nexus-vep.git
+    build:
+      context: ../genome-nexus-vep
+      dockerfile: Dockerfile
     environment:
       - VEP_ASSEMBLY=${VEP_ASSEMBLY}
     restart: always
