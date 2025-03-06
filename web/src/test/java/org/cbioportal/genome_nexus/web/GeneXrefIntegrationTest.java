@@ -23,7 +23,7 @@ import static org.junit.Assert.assertNotNull;
 @SpringBootTest(
     webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT,
     properties = {
-        "genexrefs.url=http://grch37.rest.ensembl.org/xrefs/id/ACCESSION?content-type=application/json",
+        "genexrefs.url=http://rest.ensembl.org/xrefs/id/ACCESSION?content-type=application/json",
         "spring.data.mongodb.uri=mongodb://localhost/integration",
         "server.port=38890"
     }

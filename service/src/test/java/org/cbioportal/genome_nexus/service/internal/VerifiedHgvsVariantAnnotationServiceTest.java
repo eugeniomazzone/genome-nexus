@@ -179,7 +179,7 @@ public class VerifiedHgvsVariantAnnotationServiceTest
 
     private void setUpQueryToStubMaps()
     {
-        // VEP responses for these test cases are extracted from queries to http://grch37.rest.ensembl.org/vep/human/hgvs/<variant>
+        // VEP responses for these test cases are extracted from queries to http://rest.ensembl.org/vep/human/hgvs/<variant>
         // these contain only the elements neccessary for testing the business logic in VerifiedGenomicLocationAnnotationService
         setUpQueryToStubMaps("5:g.138163256C>T", true, "C/T");
         setUpQueryToStubMaps("5:g.138163256A>T", false, null);

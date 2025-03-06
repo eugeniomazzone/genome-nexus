@@ -27,7 +27,7 @@ public class NucleotideContextDataFetcher extends BaseExternalResourceFetcher<Nu
 
     @Autowired
     public NucleotideContextDataFetcher(ExternalResourceTransformer<NucleotideContext> transformer,
-                               @Value("${ensembl.sequence.url:https://grch37.rest.ensembl.org/sequence/region/human/QUERY?content-type=application/json'}") String ensemblSequenceUrl)
+                               @Value("${ensembl.sequence.url:https://rest.ensembl.org/sequence/region/dog/QUERY?content-type=application/json'}") String ensemblSequenceUrl)
     {
         super(ensemblSequenceUrl, MAIN_QUERY_PARAM, PLACEHOLDER);
         this.transformer = transformer;
